@@ -7,13 +7,13 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "Ryan's Blog",
-      description: "Ryan's blog.",
+      title: "Ryan's Open Source",
+      description: "Ryan's open source website.",
     },
     "/zh/": {
       lang: "zh-CN",
-      title: "Ryan的博客",
-      description: "Ryan的博客",
+      title: "Ryan 开源网站",
+      description: "Ryan 开源网站",
     },
   },
 

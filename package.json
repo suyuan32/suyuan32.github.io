@@ -1,8 +1,8 @@
 {
-  "name": "simple-admin-doc",
-  "version": "0.1.9",
-  "description": "Simple admin document website",
-  "license": "MIT",
+  "name": "ryansu-web",
+  "version": "1.0.0",
+  "description": "Ryan su website",
+  "license": "Apache-2.0",
   "type": "module",
   "scripts": {
     "docs:build": "vuepress build src",
@@ -10,9 +10,9 @@
     "docs:dev": "vuepress dev src"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.59",
-    "vue": "^3.2.45",
-    "vuepress": "2.0.0-beta.59",
-    "vuepress-theme-hope": "2.0.0-beta.143"
+    "@vuepress/client": "2.0.0-beta.67",
+    "vue": "^3.3.4",
+    "vuepress": "2.0.0-beta.67",
+    "vuepress-theme-hope": "2.0.0-beta.237"
   }
 }
