@@ -30,4 +30,4 @@ features:
     link: https://gitee.com/hopefire/simple-admin-job
 
 
-footer: MIT 协议  版权所有 © 2022-present Ryan SU <a href="https://beian.miit.gov.cn/">桂ICP备2023008812号-1</a>
+footer: Apache2.0 协议  版权所有 © 2022-present Ryan SU <a href="https://beian.miit.gov.cn/">桂ICP备2023008812号-1</a>
