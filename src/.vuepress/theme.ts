@@ -28,7 +28,8 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      footer: 'Apache2.0 协议  版权所有 © 2022-present Ryan SU <a href="https://beian.miit.gov.cn/">桂ICP备2023008812号-1</a>',
+      footer:
+        'Apache2.0 协议  版权所有 © 2022-present Ryan SU <a href="https://beian.miit.gov.cn/">桂ICP备2023008812号-1</a>',
 
       displayFooter: true,
 
@@ -96,24 +97,41 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-      chart: true,
-      codetabs: true,
-      container: true,
+      component: true,
+
+      // install chart.js before enabling it
+      // chart: true,
       demo: true,
-      echarts: true,
-      figure: true,
-      flowchart: true,
-      gfm: true,
-      imgLazyload: true,
-      imgSize: true,
-      include: true,
-      katex: true,
+
+      // install echarts before enabling it
+      // echarts: true,
+
+      // install flowchart.ts before enabling it
+      // flowchart: true,
+
+      // gfm requires mathjax-full to provide tex support
+      // gfm: true,
+
+      // install katex before enabling it
+      // katex: true,
+
+      // install mathjax-full before enabling it
+      // mathjax: true,
+
       mark: true,
-      mermaid: true,
+
+      // install mermaid before enabling it
+      // mermaid: true,
+
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
+
+      // install reveal.js before enabling it
+      // revealJs: {
+      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+      // },
+
       stylize: [
         {
           matcher: "Recommended",
@@ -129,9 +147,10 @@ export default hopeTheme({
       ],
       sub: true,
       sup: true,
-      tabs: true,
       vPre: true,
-      vuePlayground: true,
+
+      // install @vue/repl before enabling it
+      // vuePlayground: true,
     },
 
     // uncomment these if you want a pwa
