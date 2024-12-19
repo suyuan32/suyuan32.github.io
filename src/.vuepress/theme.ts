@@ -66,6 +66,76 @@ export default hopeTheme({
     },
   },
 
+  // These features are enabled for demo, only preserve features you need here
+  markdown: {
+    align: true,
+    attrs: true,
+    codeTabs: true,
+    component: true,
+    demo: true,
+    figure: true,
+    gfm: true,
+    imgLazyload: true,
+    imgSize: true,
+    include: true,
+    mark: true,
+    plantuml: true,
+    spoiler: true,
+    stylize: [
+      {
+        matcher: "Recommended",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "tip" },
+              content: "Recommended",
+            };
+        },
+      },
+    ],
+    sub: true,
+    sup: true,
+    tabs: true,
+    tasklist: true,
+    vPre: true,
+
+    // uncomment these if you need TeX support
+    // math: {
+    //   // install katex before enabling it
+    //   type: "katex",
+    //   // or install mathjax-full before enabling it
+    //   type: "mathjax",
+    // },
+
+    // install chart.js before enabling it
+    // chartjs: true,
+
+    // install echarts before enabling it
+    // echarts: true,
+
+    // install flowchart.ts before enabling it
+    // flowchart: true,
+
+    // install mermaid before enabling it
+    // mermaid: true,
+
+    // playground: {
+    //   presets: ["ts", "vue"],
+    // },
+
+    // install @vue/repl before enabling it
+    // vuePlayground: true,
+
+    // install sandpack-vue3 before enabling it
+    // sandpack: true,
+
+    // install @vuepress/plugin-revealjs and uncomment these if you need slides
+    // revealjs: {
+    //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+    // },
+  },
+
   plugins: {
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
@@ -94,64 +164,6 @@ export default hopeTheme({
     // },
 
     // Disable features you don’t want here
-    mdEnhance: {
-      align: true,
-      attrs: true,
-      component: true,
-
-      // install chart.js before enabling it
-      // chart: true,
-      demo: true,
-
-      // install echarts before enabling it
-      // echarts: true,
-
-      // install flowchart.ts before enabling it
-      // flowchart: true,
-
-      // gfm requires mathjax-full to provide tex support
-      // gfm: true,
-
-      // install katex before enabling it
-      // katex: true,
-
-      // install mathjax-full before enabling it
-      // mathjax: true,
-
-      mark: true,
-
-      // install mermaid before enabling it
-      // mermaid: true,
-
-      playground: {
-        presets: ["ts", "vue"],
-      },
-
-      // install reveal.js before enabling it
-      // revealJs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
-
-      stylize: [
-        {
-          matcher: "Recommended",
-          replacer: ({ tag }) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
-          },
-        },
-      ],
-      sub: true,
-      sup: true,
-      vPre: true,
-
-      // install @vue/repl before enabling it
-      // vuePlayground: true,
-    },
 
     // uncomment these if you want a pwa
     // pwa: {
